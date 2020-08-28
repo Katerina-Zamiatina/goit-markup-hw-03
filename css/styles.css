@@ -208,6 +208,7 @@ body {
 
 .features {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .features .title {
@@ -216,6 +217,7 @@ body {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
+	text-transform: uppercase;
 }
 .features .text {
 	font-weight: 400;
@@ -256,7 +258,21 @@ body {
 	background-color: var(--bg-secondary);
 }
 
+.staff {
+	display: flex;
+}
+
+.staff .item {
+	width: calc((100% - 3 * 30px) / 4);
+}
+
+.staff .item:not(:last-child) {
+	margin-right: 30px;
+}
+
 .staff .title {
+	margin-top: 30px;
+
 	color: var(--title-text-color);
 	font-weight: 500;
 	font-size: 16px;
